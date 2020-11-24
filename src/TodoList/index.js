@@ -4,7 +4,7 @@ import { Button} from '@material-ui/core';
 
 export default function TodoList() {
 
-    const deleteTodo = (todo) => {
+    const deleteTodo = async (todo) => {
         const url = `${process.env.REACT_APP_TODOS_URL}/${todo.id}`
         const response = await fetch(url, {method: 'DELETE'})
         console.log(response.status)
