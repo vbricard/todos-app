@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Application Todo</h1>
+      <h1>Application Todo Contexte</h1>
       <TodoForm formState={formState} handleSubmit={handleSubmit} handleInputOnChange={handleInputOnChange}/>
       <TodoList todos={todos} onDeleteTodo={deleteTodo}/>
     </div>
